@@ -4,27 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="618d16c6-665e-42fe-a2f9-37ffd403573c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/SAXParserHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/XMLParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/parameters/DatabaseParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/Body.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/Frog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/xmlup/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/xmlup/db/connection/DatabaseConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/xmlup/db/parameters/DatabaseParametersTest.java" afterDir="false" />
+    <list default="true" id="618d16c6-665e-42fe-a2f9-37ffd403573c" name="Changes" comment="first working version">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/MySQL.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/PostgresSQL.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/frog/Frog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/SAXParserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/parser/FrogHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/XMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/parser/XMLParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/db/parameters/DatabaseParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/ContentObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/ContentObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/Frog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xmlup/Hooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xmlup/db/connection/DatabaseConnectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xmlup/db/parameters/DatabaseParametersTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +60,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/xmlup/src/main/resources/jdbc.drivers/mysql-connector.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/xmlup/src/main/java/com/xmlup/db/connection&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;consents&quot;
@@ -78,10 +73,16 @@
       <recent name="com.xmlup" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\xmlup\src\main\java\com\xmlup\db\connection" />
       <recent name="C:\Projects\xmlup\src\main\resources\jdbc.drivers" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\xmlup\src\main\java\com\xmlup\db\connection" />
+      <recent name="C:\Projects\xmlup\src\main\java\com\xmlup" />
+      <recent name="C:\Projects\xmlup\src\main\java\com\xmlup\db" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.xmlup.db.connection" />
@@ -94,7 +95,7 @@
       <module name="xmlup" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xmlup.db.parameters.*" />
+          <option name="PATTERN" value="com.xmlup.db.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,7 +154,7 @@
       <module name="xmlup" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xmlup.db.parameters.*" />
+          <option name="PATTERN" value="com.xmlup.db.connection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,6 +184,14 @@
       <option name="presentableId" value="Default" />
       <updated>1650788881011</updated>
     </task>
+    <task id="LOCAL-00001" summary="first working version">
+      <created>1650994620427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650994620427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,5 +204,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first working version" />
+    <option name="LAST_COMMIT_MESSAGE" value="first working version" />
   </component>
 </project>

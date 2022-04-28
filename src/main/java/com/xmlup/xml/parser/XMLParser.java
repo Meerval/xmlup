@@ -1,4 +1,4 @@
-package com.xmlup;
+package com.xmlup.xml.parser;
 
 import com.xmlup.xml.model.Body;
 import org.xml.sax.SAXException;
@@ -11,20 +11,16 @@ import java.io.IOException;
 
 public class XMLParser {
 
-    private final String filepath = "src/main/resources/test.xml";
-
-    public Body parse() {
+    public Body parse(String filepath, FrogHandler handler) {
         File file = new File(filepath);
 
         SAXParserFactory factory = SAXParserFactory.newInstance();
-        SAXParserHandler handler = new SAXParserHandler();
         SAXParser parser;
         try {
             parser = factory.newSAXParser();
         } catch (ParserConfigurationException | SAXException e) {
             throw new RuntimeException("Open SAX parser error " + e);
         }
-
 
         try {
             parser.parse(file, handler);
