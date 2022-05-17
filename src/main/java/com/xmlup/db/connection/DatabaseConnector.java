@@ -17,36 +17,25 @@ public class DatabaseConnector {
 
 
     /**
-     * Connection by String parameters
-     */
-    public DatabaseConnector(String connectionUrl, String username, String password) {
-        CONNECTION_URL = connectionUrl;
-        USERNAME = username;
-        PASSWORD = password;
-    }
-
-    /**
      * Connection by .properties file (file must be located in current package com.xmlup.db.connection)
      *
-     * @param propertiesName only name of the file without way to it.
+     * @param propertiesName name of properties file in format 'name.properties' without way.
      */
     public DatabaseConnector(String propertiesName) {
-        Properties props = new Properties();
-        String packagePath = "src/main/java/" +
-                this.getClass().getPackage().toString().replace("package ", "")
-                        .replaceAll("\\.", "/") + "/";
+        Properties properties = new Properties();
         try {
-            props.load(new FileReader(packagePath + propertiesName));
+            properties.load(new FileReader("src/main/java/com/xmlup/db/connection/" + propertiesName));
+            CONNECTION_URL = properties.getProperty("CONNECTION_URL");
+            USERNAME = properties.getProperty("USERNAME");
+            PASSWORD = properties.getProperty("PASSWORD");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        CONNECTION_URL = props.getProperty("CONNECTION_URL");
-        USERNAME = props.getProperty("USERNAME");
-        PASSWORD = props.getProperty("PASSWORD");
+
     }
 
-    public void fillTableWithData(Body body) {
+    public void fillFromXML(Body body) {
         try (Connection connection = DriverManager.getConnection(CONNECTION_URL, USERNAME, PASSWORD)) {
             System.out.println("Success connection to " + this);
 

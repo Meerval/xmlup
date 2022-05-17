@@ -6,11 +6,6 @@ public class Body {
     private String title;
     private List<ContentObject> content;
 
-    public Body(String table, List<ContentObject> content) {
-        this.title = table;
-        this.content = content;
-    }
-
     public Body() {
     }
 

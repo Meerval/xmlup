@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="618d16c6-665e-42fe-a2f9-37ffd403573c" name="Changes" comment="first working version">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/MySQL.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/PostgresSQL.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/frog/Frog.java" afterDir="false" />
+    <list default="true" id="618d16c6-665e-42fe-a2f9-37ffd403573c" name="Changes" comment="some refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/SAXParserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/parser/FrogHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/XMLParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/parser/XMLParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/db/parameters/DatabaseParameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/ContentObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/ContentObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/Frog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xmlup/Hooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xmlup/db/connection/DatabaseConnectionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/xmlup/db/parameters/DatabaseParametersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/db/connection/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xmlup/xml/model/Body.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +49,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/xmlup/src/main/java/com/xmlup/db/connection&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Meervals/Projects/xmlup&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -191,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650994620427</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some refactoring">
+      <created>1651176982998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651176982998</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +203,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first working version" />
-    <option name="LAST_COMMIT_MESSAGE" value="first working version" />
+    <MESSAGE value="some refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="some refactoring" />
   </component>
 </project>

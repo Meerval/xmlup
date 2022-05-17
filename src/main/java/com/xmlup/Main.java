@@ -13,7 +13,7 @@ public class Main {
         Body body = new XMLParser().parse("src/main/resources/test.xml", handler);
 
         DatabaseConnector connection = new DatabaseConnector("MySQL.properties");
-        connection.fillTableWithData(body);
+        connection.fillFromXML(body);
 
     }
 }
