@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.List;
 import java.util.Properties;
 
-public class DatabaseConnector {
+public class DatabaseConnection {
 
     private final String CONNECTION_URL;
     private final String USERNAME;
@@ -21,7 +21,7 @@ public class DatabaseConnector {
      *
      * @param propertiesName name of properties file in format 'name.properties' without way.
      */
-    public DatabaseConnector(String propertiesName) {
+    public DatabaseConnection(String propertiesName) {
         Properties properties = new Properties();
         try {
             properties.load(new FileReader("src/main/java/com/xmlup/db/connection/" + propertiesName));
